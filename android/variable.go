@@ -312,6 +312,7 @@ type ProductVariables struct {
 	Malloc_use_scudo             *bool    `json:",omitempty"`
 	Malloc_use_jemalloc          *bool    `json:",omitempty"`
 	Malloc_low_memory            *bool    `json:",omitempty"`
+	Malloc_use_jemalloc          *bool    `json:",omitempty"`
 	Malloc_zero_contents         *bool    `json:",omitempty"`
 	Malloc_pattern_fill_contents *bool    `json:",omitempty"`
 	Safestack                    *bool    `json:",omitempty"`

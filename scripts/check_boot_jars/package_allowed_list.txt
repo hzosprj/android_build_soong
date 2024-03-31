@@ -267,6 +267,11 @@ com\.google\.wear
 com\.google\.wear\..*
 
 ###################################################
+# NT adds
+com\.nothing
+com\.nothing\..*
+
+###################################################
 # OnePlus
 com.oplus.*
 net.oneplus.*

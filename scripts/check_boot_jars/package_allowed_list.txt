@@ -284,3 +284,7 @@ org\.ifaa\.android\.manager.*
 # NV adds
 com\.nvidia
 com\.nvidia\..*
+
+###################################################
+# Lineage HALs
+vendor\.lineage\..*

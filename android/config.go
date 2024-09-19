@@ -1308,13 +1308,6 @@ func (c *config) ExtraOtaRecoveryKeys() []string {
 }
 
 func (c *config) BuildKeys() string {
-	defaultCert := String(c.productVariables.DefaultAppCertificate)
-	if defaultCert == "" || defaultCert == filepath.Join(testKeyDir, "testkey") {
-		return "test-keys"
-	}
-	if strings.HasPrefix(defaultCert, "vendor/hertzify-priv/") {
-		return "release-keys"
-	}
 	return "release-keys"
 }
 

@@ -40,11 +40,6 @@ def get_build_flavor(product_config):
   return build_flavor
 
 def get_build_keys(product_config):
-  default_cert = product_config.get("DefaultAppCertificate", "")
-  if default_cert == "" or default_cert == os.path.join(TEST_KEY_DIR, "testKey"):
-    return "test-keys"
-  if default_cert.startswith("vendor/hertzify-priv/"):
-    return "release-keys"
   return "release-keys"
 
 def override_config(config):
